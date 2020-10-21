@@ -17,7 +17,7 @@ def load_urls_from_file(file_path: str):
 
 def load_page(url: str):
     response = urlopen(url)
-    html = response.read().decode("utf-8")
+    html = response.read().decode('utf-8')
     return html
 
 
@@ -62,4 +62,4 @@ def scrape_page(page_contents: str):
                 except UnicodeEncodeError:
                     print(".")
 
-        return clean_words
+    return clean_words
